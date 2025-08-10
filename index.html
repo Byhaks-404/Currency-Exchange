@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrencyPro | Conversor de Divisas Inteligente</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💱</text></svg>">
+</head>
+<body>
+    <div class="background-animation"></div>
+    
+    <div class="container">
+        <header class="app-header">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <i class="fas fa-exchange-alt"></i>
+                </div>
+                <h1>Currency<span>Pro</span></h1>
+            </div>
+            <p class="tagline">Conversiones precisas en tiempo real</p>
+        </header>
+
+        <main class="app-content">
+            <div class="converter-card">
+                <div class="input-section">
+                    <div class="input-group">
+                        <label for="amount">Cantidad</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="amount" placeholder="100.00" min="0" step="0.01">
+                            <span class="currency-symbol">$</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        
+                        <div class="select-wrapper">
+                            <select id="from-currency">
+                              <option value="USD" selected>USD - Dólar Estadounidense</option>
+                              <option value="EUR">EUR - Euro</option>
+                              <option value="GBP">GBP - Libra Esterlina</option>
+                              <option value="JPY">JPY - Yen Japonés</option>
+                              <option value="AUD">AUD - Dólar Australiano</option>
+                              <option value="CAD">CAD - Dólar Canadiense</option>
+                              <option value="CHF">CHF - Franco Suizo</option>
+                              <option value="CNY">CNY - Yuan Chino</option>
+                              <option value="MXN">MXN - Peso Mexicano</option>
+                              <option value="BRL">BRL - Real Brasileño</option>
+                              <option value="INR">INR - Rupia India</option>
+                              <option value="RUB">RUB - Rublo Ruso</option>
+                              <option value="ZAR">ZAR - Rand Sudafricano</option>
+                              <option value="KRW">KRW - Won Surcoreano</option>
+                              <option value="SGD">SGD - Dólar de Singapur</option>
+                            </select>
+                            <div class="select-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swap-button">
+                    <button id="swap" aria-label="Intercambiar divisas">
+                        <i class="fas fa-arrow-down-arrow-up"></i>
+                    </button>
+                </div>
+
+                <div class="output-section">
+                    <div class="input-group">
+                        <label for="result">Resultado</label>
+                        <div class="input-wrapper">
+                            <input type="number" id="result" placeholder="0.00" readonly>
+                            <span class="currency-symbol">€</span>
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        
+                        <div class="select-wrapper">
+                            <select id="to-currency">
+                              <option value="EUR" selected>EUR - Euro</option>
+                              <option value="USD">USD - Dólar Estadounidense</option>
+                              <option value="GBP">GBP - Libra Esterlina</option>
+                              <option value="JPY">JPY - Yen Japonés</option>
+                              <option value="AUD">AUD - Dólar Australiano</option>
+                              <option value="CAD">CAD - Dólar Canadiense</option>
+                              <option value="CHF">CHF - Franco Suizo</option>
+                              <option value="CNY">CNY - Yuan Chino</option>
+                              <option value="MXN">MXN - Peso Mexicano</option>
+                              <option value="BRL">BRL - Real Brasileño</option>
+                              <option value="INR">INR - Rupia India</option>
+                              <option value="RUB">RUB - Rublo Ruso</option>
+                              <option value="ZAR">ZAR - Rand Sudafricano</option>
+                              <option value="KRW">KRW - Won Surcoreano</option>
+                              <option value="SGD">SGD - Dólar de Singapur</option>
+                            </select>
+                            <div class="select-arrow">
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button id="convert" class="convert-button">
+                    <span>Convertir</span>
+                    <i class="fas fa-calculator"></i>
+                </button>
+            </div>
+
+
+
+
+        </main>
+
+        <div class="partners-section">
+            <h3>Servicios Recomendados</h3>
+            <div class="partners-grid">
+                <a href="https://wise.com/" target="_blank" class="partner-card">
+                    <img src="https://wise.com/public-resources/assets/logos/wise/logo.svg" alt="Wise">
+                    <span>Transferencias Internacionales</span>
+                </a>
+                <a href="https://www.revolut.com/" target="_blank" class="partner-card">
+                    <img src="https://www.revolut.com/static-images/global/logo.svg" alt="Revolut">
+                    <span>Cuenta Multimoneda</span>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
